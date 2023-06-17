@@ -1,4 +1,4 @@
-# Predict Housing Prices in Boston Application
+# Predicting Housing Prices in Boston Application
 
 ## Capstone Project - Udacity Cloud-Developer Nanodegree
 
