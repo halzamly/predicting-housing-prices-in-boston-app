@@ -1,0 +1,1 @@
+kubectl autoscale deployment api-predict --cpu-percent=70 --min=2 --max=3

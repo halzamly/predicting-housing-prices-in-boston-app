@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-predict
+  labels:
+    app: api-predict
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: api-predict
+  template:
+    metadata:
+      labels:
+        app: api-predict
+    spec:
+      containers:
+      - name: api-predict
+        image: halzamly/flaskml:v1
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: "250m"
+          limits:
+            cpu: "500m" 
+      restartPolicy: Always
