@@ -77,7 +77,7 @@ Using the exposed external IP, send POST request to the API endpoint, link shoul
 
 [a339a389bd5904a24968cfb698231dc1-1659273938.us-east-1.elb.amazonaws.com/predict](a339a389bd5904a24968cfb698231dc1-1659273938.us-east-1.elb.amazonaws.com/predict)
 
-You can use Postmann to send the HTTP request as follow:
+You can use Postman to send the HTTP request as follow:
 
 ![eks-cluster-overview](screenshots/make-prediction-kubernetes-postman.png)
 
