@@ -44,7 +44,31 @@ source .devops/bin/activate
 Send POST request with a JSON body containes values of a variables (based on the dataframe described in data source) to the following endpoint:
 `http://localhost:80/predict`
 
-Or you can use the script `make_prediction.sh` to make a prediction. Where an example of a JSON body used with this script.
+An example of a JSON body to use:
+
+```JSON
+{  
+   "CHAS":{  
+      "0":0
+   },
+   "RM":{  
+      "0":6.575
+   },
+   "TAX":{  
+      "0":296.0
+   },
+   "PTRATIO":{  
+      "0":15.3
+   },
+   "B":{  
+      "0":396.9
+   },
+   "LSTAT":{  
+      "0":4.98
+   }
+}
+```
+Or you can use the script `make_prediction.sh` to make a prediction.
 
 ## Container Orchestration with Kubernetes
 ### Create an Amazon EKS Cluster and Node Group
